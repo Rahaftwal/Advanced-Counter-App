@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:shared_preferences.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../models/counter_history.dart';
 
 class CounterService {

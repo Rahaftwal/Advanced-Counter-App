@@ -24,12 +24,25 @@ class HistoryScreen extends StatelessWidget {
         title: const Text('Counter History'),
         centerTitle: true,
       ),
-      body: ListView.builder(
-        itemCount: counterService.history.length,
-        itemBuilder: (context, index) {
-          final history = counterService.history[index];
-          return HistoryItem(history: history);
-        },
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [
+              Colors.white,
+              Theme.of(context).colorScheme.primary.withOpacity(0.1),
+            ],
+          ),
+        ),
+        child: ListView.builder(
+          padding: const EdgeInsets.all(16),
+          itemCount: counterService.history.length,
+          itemBuilder: (context, index) {
+            final history = counterService.history[index];
+            return HistoryItem(history: history);
+          },
+        ),
       ),
     );
   }
@@ -46,22 +59,44 @@ class HistoryItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+      margin: const EdgeInsets.only(bottom: 16),
+      elevation: 4,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(16),
+      ),
       child: ListTile(
-        leading: _getIcon(),
+        leading: Container(
+          padding: const EdgeInsets.all(8),
+          decoration: BoxDecoration(
+            color: _getTypeColor().withOpacity(0.1),
+            borderRadius: BorderRadius.circular(12),
+          ),
+          child: _getIcon(),
+        ),
         title: Text(
           'Value: ${history.value}',
-          style: Theme.of(context).textTheme.titleMedium,
+          style: Theme.of(context).textTheme.titleMedium?.copyWith(
+            fontWeight: FontWeight.bold,
+          ),
         ),
         subtitle: Text(
           _formatDate(history.timestamp),
-          style: Theme.of(context).textTheme.bodySmall,
+          style: Theme.of(context).textTheme.bodySmall?.copyWith(
+            color: Colors.grey[600],
+          ),
         ),
-        trailing: Text(
-          _getTypeText(),
-          style: TextStyle(
-            color: _getTypeColor(),
-            fontWeight: FontWeight.bold,
+        trailing: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+          decoration: BoxDecoration(
+            color: _getTypeColor().withOpacity(0.1),
+            borderRadius: BorderRadius.circular(12),
+          ),
+          child: Text(
+            _getTypeText(),
+            style: TextStyle(
+              color: _getTypeColor(),
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ),
       ),

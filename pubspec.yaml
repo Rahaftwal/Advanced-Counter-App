@@ -1,7 +1,7 @@
 # Developer Information
 # File: pubspec.yaml
 # Description: Package configuration and dependencies for the Advanced Counter app
-# Author: Rahaf AL-Twal
+# Author: Rahaf Altwal
 # Date: 2025
 # Version: 1.0.0
 
@@ -28,7 +28,7 @@ version: 1.0.0+1
 # Developer Information
 author: Rahaf Altwal
 homepage: https://github.com/Rahaftwal
-repository: https://github.com/Rahaftwal/Advanced-Counter
+repository: https://github.com/Rahaftwal/Advanced-Counter-App
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -88,12 +88,12 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  fonts:
-    - family: Cairo
-      fonts:
-        - asset: assets/fonts/Cairo-Regular.ttf
-        - asset: assets/fonts/Cairo-Bold.ttf
-          weight: 700
+  # fonts:
+  #   - family: Cairo
+  #     fonts:
+  #       - asset: assets/fonts/Cairo-Regular.ttf
+  #       - asset: assets/fonts/Cairo-Bold.ttf
+  #         weight: 700
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

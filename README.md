@@ -1,16 +1,108 @@
-# counter_app
+# Advanced Counter App
 
-A new Flutter project.
+A sophisticated Flutter application featuring a modern counter with advanced functionality including countdown timer and history tracking.
+
+## Features
+
+- **Modern Counter**
+  - Increment and decrement functionality
+  - Large, clear display
+  - Beautiful Material 3 design
+  - Smooth animations
+
+- **Countdown Timer**
+  - Customizable duration
+  - Real-time countdown display
+  - Start/Stop functionality
+  - Visual feedback
+
+- **History Tracking**
+  - Records all counter operations
+  - Timestamp tracking
+  - Operation type identification
+  - Color-coded entries
+
+- **Modern UI**
+  - Material 3 design
+  - Beautiful gradients
+  - Custom animations
+  - Responsive layout
+  - Dark mode support
+
+## Screenshots
+
+[Add screenshots here]
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+### Prerequisites
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter SDK (>=3.0.0)
+- Dart SDK (>=3.0.0)
+- Android Studio / VS Code
+- Android/iOS emulator or physical device
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Installation
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/advanced-counter-app.git
+```
+
+2. Navigate to the project directory:
+```bash
+cd advanced-counter-app
+```
+
+3. Install dependencies:
+```bash
+flutter pub get
+```
+
+4. Run the app:
+```bash
+flutter run
+```
+
+## Project Structure
+
+```
+lib/
+├── main.dart              # Application entry point
+├── models/
+│   └── counter_history.dart  # Counter history model
+├── screens/
+│   ├── counter_screen.dart   # Main counter screen
+│   └── history_screen.dart   # History tracking screen
+├── services/
+│   └── counter_service.dart  # Counter business logic
+└── widgets/
+    └── counter_button.dart   # Reusable counter button
+```
+
+## Dependencies
+
+- `shared_preferences`: ^2.2.2 - For local storage
+- `google_fonts`: ^6.1.0 - For custom typography
+- `cupertino_icons`: ^1.0.2 - For iOS-style icons
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Developer Information
+
+- **Author**: Rahaf AL-Twal
+- **Date**: 2025
+- **Version**: 1.0.0
+- **Contact**: [Your Email]
+
+## Acknowledgments
+
+- Flutter team for the amazing framework
+- Material Design team for the beautiful design system
+- All contributors and supporters
