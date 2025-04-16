@@ -1,6 +1,7 @@
 # Advanced Counter App
+A sophisticated Flutter application featuring a modern counter with advanced functionality, including a countdown timer and history tracking.
 
-A sophisticated Flutter application featuring a modern counter with advanced functionality including countdown timer and history tracking.
+![Advanced-Counter-App](https://github.com/user-attachments/assets/d6464dce-413b-4221-944b-d5161e62b40a)
 
 ## Features
 
