@@ -100,7 +100,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Author**: Rahaf AL-Twal
 - **Date**: 2025
 - **Version**: 1.0.0
-- **Contact**: [Your Email]
+- **Contact**: [rahaftwal@gmail.com]
 
 ## Acknowledgments
 
