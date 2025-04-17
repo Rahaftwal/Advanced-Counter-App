@@ -30,9 +30,6 @@ A sophisticated Flutter application featuring a modern counter with advanced fun
   - Responsive layout
   - Dark mode support
 
-## Screenshots
-
-[Add screenshots here]
 
 ## Getting Started
 
@@ -102,8 +99,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Version**: 1.0.0
 - **Contact**: [rahaftwal@gmail.com]
 
-## Acknowledgments
-
-- Flutter team for the amazing framework
-- Material Design team for the beautiful design system
-- All contributors and supporters
